@@ -1,0 +1,22 @@
+---
+---
+
+@import "{{ site.theme }}";
+
+.sharebuttons ul {
+    text-align: center;
+    padding: 0 0 0 0;
+}
+
+.sharebuttons ul li {
+    display: inline;
+}
+
+.sharebuttons ul li a {
+    text-decoration: none;
+}
+
+.sharebuttons ul li svg {
+    width: 40px;
+    height: 40px;
+}
