@@ -1,0 +1,48 @@
+---
+# Feel free to add content and custom Front Matter to this file.
+# To modify the layout, see https://jekyllrb.com/docs/themes/#overriding-theme-defaults
+
+layout: default
+permalink: /register/
+---
+
+<h1>Request Membership</h1>
+<hr />
+<form id="fs-frm" name="registration-form" accept-charset="utf-8" action="https://formspree.io/f/mleazllw" method="post">
+    <fieldset id="fs-frm-inputs">
+      <label for="full-name">Full Name:</label>
+      <input type="text" name="name" id="full-name" placeholder="First and Last" required />
+      <br/>
+      <br/>
+      <label for="email-address">Email:</label>
+      <input type="email" name="_replyto" id="email-address" placeholder="email@domain.eg" required />
+      <br/>
+      <br/>
+      <label for="phone">Phone Number:</label>
+      <input type="text" name="phone" id="phone" placeholder="XXX-XXX-XXXX" required />
+      <br/>
+      <br/>
+      <div>
+        <label>Area:</label>
+
+        <input type="radio" id="areaEastSide"
+         name="area" value="eastSide" required>
+        <label for="areaEastSide">East Side</label>
+    
+        <input type="radio" id="areaSeattle"
+         name="area" value="Seattle" required>
+        <label for="areaSeattle">Seattle</label>
+      </div>
+      <br/>
+      <label for="acquaintance">Do you know anyone in the group?</label>
+      <input type="email" name="_replyto" id="acquaintance" placeholder="Who?" />
+      <br/>
+      <br/>
+      <label for="note">Tell us about yourself:</label>
+      <br />
+      <textarea style="width: 100%; max-width: 100%;" rows="10" name="note" id="note" placeholder="What kind of watches are you into? What do you expect to find in this group? What do you do for a living?"  required=""></textarea>
+      <input type="hidden" name="_subject" id="email-subject" value="Registration Form Submission">
+    </fieldset>
+    <hr />
+    <input type="submit" value="Register">
+  </form>
